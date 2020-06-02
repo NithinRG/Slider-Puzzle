@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    /* background-color: #d3ac67;
+    background: linear-gradient(to bottom right, #7f7fd5,#86a8e7, #91eae4);
+    background: linear-gradient(to bottom right, #56CCF2,#2F80ED); */
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    /* background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+    /* background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+}
+
+.board {
+    position: relative;
+    margin: 150px auto 0px;
+    width: 306px;
+    height: 306px;
+    background-color: #e28f4b;
+    display: flex;
+    flex-wrap: wrap;
+    border: 20px solid #975a3e;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
+.piece {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #c56e46;
+    border: 1px solid #53361e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+}
+
+.piece:nth-child(9) {
+    display: none;
+}
+
+.shuffle {
+    text-align: center;
+    margin-top: 30px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    -webkit-tap-highlight-color: transparent;
+    user-select: none; /* Standard syntax */
+}
+
+#shuffleBtn {
+    position: relative;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #43cea2;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px grey;
+}
+
+#shuffleBtn:hover {
+    background-color: #3ab38c;
+}
+
+#shuffleBtn:active {
+    top: 2px;
+    box-shadow: 0px 1px 3px grey;
+}
+
+#counter {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+#closeBtn {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closeBtn:hover,
+#closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #ef737b;
+    color: white;
+    font-size: large;
+}
+
+.modal-body {
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #ef737b;
+    color: white;
+    text-align: center;
+}
+
+#tryAgainBtn {
+    position: relative;
+    margin: 10px auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #98E08D;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 8px 10px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px grey;
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-content {
+        width: 40%;
+    }
+}

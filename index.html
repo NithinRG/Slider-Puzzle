@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider puzzle</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="board">
+        <div id="1" class="piece">1</div>
+        <div id="2" class="piece">2</div>
+        <div id="3" class="piece">3</div>
+        <div id="4" class="piece">4</div>
+        <div id="5" class="piece">5</div>
+        <div id="6" class="piece">6</div>
+        <div id="7" class="piece">7</div>
+        <div id="8" class="piece">8</div>
+        <div id="9" class="piece">9</div>
+    </div>
+
+    <div class="shuffle">
+        <button id="shuffleBtn">Shuffle</button>
+    </div>
+
+    <div id="counter">00:00</div>
+
+    <div id="victory" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="closeBtn">&times;</span>
+                <h2>Congratulations</h2>
+            </div>
+            <div class="modal-body">
+                <p>You completed the puzzle in <span id="timeCompleted"></span></p>
+                <p>Number of moves: <span id="moveCounter"></span></p>
+                <p>Wanna go again?</p>
+            </div>
+            <div class="modal-footer">
+                <button id="tryAgainBtn">Try again</button>
+            </div>
+        </div>
+    </div>
+      
+</body>
+
+<script src="./assets/js/scipt.js"></script>
+
+</html>
