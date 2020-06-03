@@ -165,6 +165,37 @@ body {
     box-shadow: 0px 3px 3px grey;
 }
 
+#viewCode {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+}
+
+#viewCode button {
+    position: relative;
+    margin: 10px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #eff3f6;
+    background: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+}
+
+#viewCode img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#viewCode a {
+    text-decoration: none;
+    color: #252525;
+}
+
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
