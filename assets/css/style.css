@@ -15,6 +15,7 @@ body {
     background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
     /* background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+    background-attachment: fixed;
 }
 
 .board {
@@ -166,10 +167,9 @@ body {
 }
 
 #viewCode {
-    position: absolute;
+    position: relative;
     text-align: center;
-    bottom: 20px;
-    width: 100%;
+    margin-top: 30px;
 }
 
 #viewCode button {
