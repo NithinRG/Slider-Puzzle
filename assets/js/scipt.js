@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    a = [1,2,3,4,5,6,7,8,"empty"];
+    let a = [1,2,3,4,5,6,7,8,"empty"];
 
     const pieces = document.getElementsByClassName("piece");
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
     
     let moveCount = 0;
 
-    solved = a.slice();
+    const solved = a.slice();
 
     const counter = document.getElementById("counter");
 
